@@ -1,7 +1,7 @@
-from app import app, mail
+from application import application, mail
 from flask import render_template, url_for, request,redirect, flash
 from flask_mail import Message
-from app.forms import Email
+from application.forms import Email
 from threading import Thread
 # from .decorators import async
 
@@ -10,15 +10,15 @@ data = []
 
 # @async
 def send_async_email(app, msg):
-    with app.app_context():
+    with application.app_context():
         mail.send(msg)
 
-@app.route("/", methods=["GET"])
-@app.route("/home", methods=["GET"])
+@application.route("/", methods=["GET"])
+@application.route("/home", methods=["GET"])
 def home():
     return render_template("home.html")    
 
-@app.route("/contact", methods=["GET", "POST"])
+@application.route("/contact", methods=["GET", "POST"])
 def contact():
     form = Email()
     print(form.validate_on_submit())
@@ -39,22 +39,22 @@ def contact():
     return render_template("contact.html", form=form)   
 
 
-@app.route("/<user>", methods=["GET"])
+@application.route("/<user>", methods=["GET"])
 def user(user):
     return render_template("user.html", user=user)   
 
-@app.route("/faq", methods=["GET"])
+@application.route("/faq", methods=["GET"])
 def faq():
     return render_template("faq.html")   
 
-@app.route("/hackers", methods=["GET"])
+@application.route("/hackers", methods=["GET"])
 def hackers():
     return render_template("hackers.html") 
 
-@app.errorhandler(404)
+@application.errorhandler(404)
 def fileNotFound(e):
     return (render_template("404.html"), 404)
 
-@app.errorhandler(404)
+@application.errorhandler(404)
 def serverError(e):
     return (render_template("505.html"), 505)
