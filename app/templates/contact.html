@@ -1,0 +1,92 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<!------ Include the above in your HEAD tag ---------->
+<style>
+.errors{
+    color: red;
+}
+    </style>
+<div>
+    <div class="container contact-form">
+                <div class="row">   
+                    {{form.hidden_tag()}}
+                    <div class="col-md-6">
+                        <img src="https://image.ibb.co/kUagtU/rocket_contact.png" alt="rocket_contact"/>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <p></p>
+                            <p></p>
+                            <h3><b>Give us a Call</b></h3>
+                            <h4>Hours</h4>
+                            <p>Anytime</p>
+                            <h4>Telephone</h4>
+                            <p>+44 (0) 7765472768</p>
+                            <h4>Email</h4>
+                            <p>admin@LearnHack.co.uk</p>                    </div>
+                    </div>
+                </div>
+                <form action="" method="post">
+                    <h3><b>Drop Us a Message</b></h3>
+                <div class="row">
+                    {{form.hidden_tag()}}
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <input type="text" name="name" class="form-control" placeholder="Your Name *" value="" />
+                                {% if form.name.errors %}
+                                <li class="errors"> {% for errors in form.name.errors%}
+                                        {{ errors }}
+                                    {% endfor %}
+                                </li>
+                                {% endif %}
+                            </div>
+                            <div class="form-group">
+                                <input type="text" name="email" class="form-control" placeholder="Your Email *" value="" />
+                                {% if form.name.errors %}
+                                <li class="errors">  {% for errors in form.email.errors%}
+                                        {{ errors }}
+                                    {% endfor %}
+                                </li>
+                                {% endif %}
+                            </div>
+                            <div class="form-group">
+                                <input type="text" name="number" class="form-control" placeholder="Your Number *" value="" />
+                                {% if form.number.errors %}
+                                <li class="errors"> {% for errors in form.name.errors%}
+                                        {{ errors }}
+                                    {% endfor %}
+                                </li>
+                                {% endif %}
+                            </div>
+                            <div class="form-group">
+                                <input type="submit" name="btnSubmit" class="btnContact" value="Send Message" />
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <textarea name="msg" class="form-control" placeholder="Your Message *" style="width: 100%; height:200px;"></textarea>
+                                {% if form.msg.errors %}
+                                <li class="errors"> {% for errors in form.name.errors%}
+                                        {{ errors }}
+                                    {% endfor %}
+                                </li>
+                                {% endif %}
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <p>
+                            
+                        </p>                        
+                    </div>
+                </form>
+    </div>
+</div>
+<!--Section: Contact v.2-->
+{% endblock %}

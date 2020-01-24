@@ -1,0 +1,57 @@
+.grid-container {
+  display: inline-grid;
+}
+.row{
+  display: flex;
+}
+.column {
+  flex: 50%;
+}
+
+.cover {
+
+    /* background-image: url({{url_for('static', filename='img/bg_finally.jpg') }}); */
+    background-image: url('/static/img/bg.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: blue;
+} 
+
+.flashes {
+  color: red
+}
+
+html,body { height: 100%;  margin: 0; }
+
+header {
+  height: 50px;
+  background: #808080;
+}
+
+footer {
+  height: 50px;
+  background: #808080;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem; 
+}
+
+
+container-instructors{
+  display: grid;
+}
+
+
+/**** Trick: ****/
+body {
+  display: table;
+  width: 100%; 
+}
+
+footer {
+   display: table-row;
+}
+
+

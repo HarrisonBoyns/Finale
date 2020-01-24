@@ -1,0 +1,27 @@
+{% macro render_profile(user_name) %}
+    <style>
+        img {
+            max-width: 100%;
+            max-height: 100%;
+        }
+    </style>
+        <div class="grid-item col-sm-4" class="btn btn-xl btn-outline-light">
+            <div class="text-container">
+                <a href="{{ url_for('user', user=user_name ) }}">
+                    <div class="text-container">
+                        <div class="text-container">
+                        </div>
+                    <img src="https://therefinerye9.com/wp-content/uploads/2017/09/TheRefineryE9-Andy-thumb.png" alt="Andy Kobelinski" class="img-reponsive">
+                    </div>
+                    <div class="text-container">
+                        <h3 class="text_h" style="padding-top: 15px;">{{ user_name }}</h3>
+                        <div class="text-container">
+                            <p class="text_smaller">
+                                Cheese Enthusiast and Lover of beef jerky. Cheese Enthusiast and Lover of beef jerky									</p>
+                        </div>
+                        <a href="{{ url_for('user', user=user_name ) }}" class="btn-fix"> Read More </a>
+                    </div>
+                </a>
+            </div>    
+        </div>
+{% endmacro %}

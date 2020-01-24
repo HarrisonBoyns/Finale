@@ -1,0 +1,106 @@
+ * Tip: There are .env or .flaskenv files present. Do "pip install python-dotenv" to use them.
+ * Serving Flask app "app" (lazy loading)
+ * Environment: development
+ * Debug mode: on
+ * Running on http://0.0.0.0:80/ (Press CTRL+C to quit)
+ * Restarting with stat
+ * Tip: There are .env or .flaskenv files present. Do "pip install python-dotenv" to use them.
+ * Debugger is active!
+ * Debugger PIN: 318-912-180
+ * Tip: There are .env or .flaskenv files present. Do "pip install python-dotenv" to use them.
+ * Serving Flask app "app" (lazy loading)
+ * Environment: development
+ * Debug mode: on
+Traceback (most recent call last):
+  File "run.py", line 4, in <module>
+    app.run(host="0.0.0.0", port=80)
+  File "/opt/anaconda3/lib/python3.7/site-packages/flask/app.py", line 990, in run
+    run_simple(host, port, self, **options)
+  File "/opt/anaconda3/lib/python3.7/site-packages/werkzeug/serving.py", line 988, in run_simple
+    s.bind(server_address)
+OSError: [Errno 48] Address already in use
+127.0.0.1 - - [15/Jan/2020 17:13:06] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jan/2020 17:13:06] "GET /static/img/bg.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jan/2020 17:13:07] "GET /favicon.ico HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jan/2020 17:13:08] "GET /hackers HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jan/2020 17:13:08] "GET /favicon.ico HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jan/2020 17:13:08] "GET /faq HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jan/2020 17:13:09] "GET /favicon.ico HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jan/2020 17:13:09] "GET /contact HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jan/2020 17:13:10] "GET /favicon.ico HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jan/2020 17:26:04] "GET /contact HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jan/2020 17:26:04] "GET /favicon.ico HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jan/2020 17:26:05] "GET /hackers HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jan/2020 17:26:05] "GET /favicon.ico HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jan/2020 17:26:06] "GET /faq HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jan/2020 17:26:06] "GET /favicon.ico HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jan/2020 17:26:06] "GET /contact HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jan/2020 17:26:07] "GET /favicon.ico HTTP/1.1" 200 -
+send: 'ehlo 3.0.168.192.in-addr.arpa\r\n'
+reply: b'250-smtp.gmail.com at your service, [2a02:c7f:1222:e00:44f8:ae4:27c5:9880]\r\n'
+reply: b'250-SIZE 35882577\r\n'
+reply: b'250-8BITMIME\r\n'
+reply: b'250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH\r\n'
+reply: b'250-ENHANCEDSTATUSCODES\r\n'
+reply: b'250-PIPELINING\r\n'
+reply: b'250-CHUNKING\r\n'
+reply: b'250 SMTPUTF8\r\n'
+reply: retcode (250); Msg: b'smtp.gmail.com at your service, [2a02:c7f:1222:e00:44f8:ae4:27c5:9880]\nSIZE 35882577\n8BITMIME\nAUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH\nENHANCEDSTATUSCODES\nPIPELINING\nCHUNKING\nSMTPUTF8'
+send: 'AUTH PLAIN AExlYXJuSGFja3R1dG9yaW5nQGdtYWlsLmNvbQBMZWFybkhhY2sxNCE=\r\n'
+reply: b'235 2.7.0 Accepted\r\n'
+reply: retcode (235); Msg: b'2.7.0 Accepted'
+send: 'mail FROM:<LearnHackTutoring@gmail.com> size=414\r\n'
+reply: b'250 2.1.0 OK z8sm25154784wrq.22 - gsmtp\r\n'
+reply: retcode (250); Msg: b'2.1.0 OK z8sm25154784wrq.22 - gsmtp'
+send: 'rcpt TO:<harrison.boyns@hotmail.com>\r\n'
+reply: b'250 2.1.5 OK z8sm25154784wrq.22 - gsmtp\r\n'
+reply: retcode (250); Msg: b'2.1.5 OK z8sm25154784wrq.22 - gsmtp'
+send: 'rcpt TO:<CMboyns14@hotmail.com>\r\n'
+reply: b'250 2.1.5 OK z8sm25154784wrq.22 - gsmtp\r\n'
+reply: retcode (250); Msg: b'2.1.5 OK z8sm25154784wrq.22 - gsmtp'
+send: 'data\r\n'
+reply: b'354  Go ahead z8sm25154784wrq.22 - gsmtp\r\n'
+reply: retcode (354); Msg: b'Go ahead z8sm25154784wrq.22 - gsmtp'
+data: (354, b'Go ahead z8sm25154784wrq.22 - gsmtp')
+send: b'Content-Type: text/plain; charset="utf-8"\r\nMIME-Version: 1.0\r\nContent-Transfer-Encoding: 7bit\r\nSubject: Lesson\r\nFrom: LearnHackTutoring@gmail.com\r\nTo: harrison.boyns@hotmail.com, CMboyns14@hotmail.com\r\nDate: Wed, 15 Jan 2020 17:26:14 +0000\r\nMessage-ID: <157910917452.10321.16932546801823145363@3.0.168.192.in-addr.arpa>\r\n\r\nwfafsfsdd sd wasfasf feafefs afd\r\nharrison.boyns@hotmail.com\r\nafsfeafef\r\nHarrison Max Boyns\r\n.\r\n'
+reply: b'250 2.0.0 OK  1579109175 z8sm25154784wrq.22 - gsmtp\r\n'
+reply: retcode (250); Msg: b'2.0.0 OK  1579109175 z8sm25154784wrq.22 - gsmtp'
+data: (250, b'2.0.0 OK  1579109175 z8sm25154784wrq.22 - gsmtp')
+send: 'quit\r\n'
+reply: b'221 2.0.0 closing connection z8sm25154784wrq.22 - gsmtp\r\n'
+reply: retcode (221); Msg: b'2.0.0 closing connection z8sm25154784wrq.22 - gsmtp'
+127.0.0.1 - - [15/Jan/2020 17:26:15] "POST /contact HTTP/1.1" 302 -
+127.0.0.1 - - [15/Jan/2020 17:26:15] "GET /home HTTP/1.1" 200 -
+send: 'ehlo 3.0.168.192.in-addr.arpa\r\n'
+reply: b'250-smtp.gmail.com at your service, [2a02:c7f:1222:e00:44f8:ae4:27c5:9880]\r\n'
+reply: b'250-SIZE 35882577\r\n'
+reply: b'250-8BITMIME\r\n'
+reply: b'250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH\r\n'
+reply: b'250-ENHANCEDSTATUSCODES\r\n'
+reply: b'250-PIPELINING\r\n'
+reply: b'250-CHUNKING\r\n'
+reply: b'250 SMTPUTF8\r\n'
+reply: retcode (250); Msg: b'smtp.gmail.com at your service, [2a02:c7f:1222:e00:44f8:ae4:27c5:9880]\nSIZE 35882577\n8BITMIME\nAUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH\nENHANCEDSTATUSCODES\nPIPELINING\nCHUNKING\nSMTPUTF8'
+send: 'AUTH PLAIN AExlYXJuSGFja3R1dG9yaW5nQGdtYWlsLmNvbQBMZWFybkhhY2sxNCE=\r\n'
+reply: b'235 2.7.0 Accepted\r\n'
+reply: retcode (235); Msg: b'2.7.0 Accepted'
+send: 'quit\r\n'
+reply: b'221 2.0.0 closing connection z83sm735926wmg.2 - gsmtp\r\n'
+reply: retcode (221); Msg: b'2.0.0 closing connection z83sm735926wmg.2 - gsmtp'
+Exception in thread Thread-21:
+Traceback (most recent call last):
+  File "/opt/anaconda3/lib/python3.7/threading.py", line 926, in _bootstrap_inner
+    self.run()
+  File "/opt/anaconda3/lib/python3.7/threading.py", line 870, in run
+    self._target(*self._args, **self._kwargs)
+  File "/Users/harrisonboyns/Downloads/Tutoring1-master_3/app/routes.py", line 14, in send_async_email
+    mail.send(msg)
+  File "/opt/anaconda3/lib/python3.7/site-packages/flask_mail.py", line 492, in send
+    message.send(connection)
+AttributeError: 'str' object has no attribute 'send'
+
+127.0.0.1 - - [15/Jan/2020 17:26:16] "GET /favicon.ico HTTP/1.1" 200 -
+False
+False
+False
+True

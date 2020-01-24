@@ -1,0 +1,56 @@
+{% from "profile_macro.html" import render_profile %}
+
+{% extends "base.html" %}
+{% block content %}
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+	<link href="../static/css/full-width-pics.css" rel="stylesheet">  	
+	<link href="../static/css/profiles.css" rel="stylesheet"> 
+	<link href="../static/css/freelancer.min.css" rel="stylesheet">
+ 	
+		<style>
+			a:link{
+				text-decoration: none;
+			}
+		</style>
+	<div>
+	<div style="text-align:center;">
+		<h1 style="padding-top: 15px;">
+			Meet the Hackers
+		</h1>
+	</div>
+	<div class="container-prac">
+	<div style="text-align:center;">
+		<div class="container-instructors">
+			{{ render_profile("Harrison") }}
+			{{ render_profile("Chelsea") }}
+			{{ render_profile("James") }}
+			{{ render_profile("Charlie") }}
+			{{ render_profile("Molly") }}
+			{{ render_profile("Ed") }}
+			{{ render_profile("Clive") }}
+			{{ render_profile("Julie") }}
+			{{ render_profile("Neil") }}
+			{{ render_profile("Neil") }}
+			{{ render_profile("Neil") }}
+			{{ render_profile("Neil") }}
+			{{ render_profile("Neil") }}
+			{{ render_profile("Neil") }}
+			{{ render_profile("Clyde") }}
+			
+		</div>
+	</div>
+	</div>
+
+  <div class="container">
+	<div class="row">
+		<div class="col-sm-12">
+			<div class="re9-cta-wrapper re9-blue-style">
+				<p>Want To Get in Touch?</p>
+				<a href="{{ url_for('contact') }}" class="re9-white-btn" id="filter-menu"> CLICK HERE</a>
+			</div>
+		</div>
+	</div>
+</div>
+			￼
+{% endblock %}
