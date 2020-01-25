@@ -5,6 +5,21 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <script>document.getElementsByTagName("html")[0].className += " js";</script>
 
+<header id="header">
+	<div class="container">
+
+	  <nav id="nav-menu-container">
+		<ul class="nav-menu">
+		  <li><a href="{{ url_for('homeHype') }}"><b>LearnHack</b></a></li>
+		  <li><a href="{{ url_for('hackers') }}"><b>Find a Hacker</b></a></li>
+		  <li><a href="{{ url_for('becomeAHacker') }}"><b>Become a Hacker</b></a></li>
+		  <li><a href="{{ url_for('faq') }}"><b>Questions</b></a></li>
+		  <li><a href="{{ url_for('contact') }}"><b>Contact Us</b></a></li>
+		</ul>
+	  </nav><!-- #nav-menu-container -->
+	</div>
+  </header><!-- #header -->
+
 <style>
 	a {
 	color: white;
