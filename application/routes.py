@@ -13,10 +13,10 @@ def send_async_email(application, msg):
     with application.app_context():
         mail.send(msg)
 
-@application.route("/", methods=["GET"])
-@application.route("/home", methods=["GET"])
-def home():
-    return render_template("home.html")    
+# @application.route("/", methods=["GET"])
+# @application.route("/home", methods=["GET"])
+# def home():
+#     return render_template("home.html")    
 
 @application.route("/contact", methods=["GET", "POST"])
 def contact():
@@ -37,7 +37,6 @@ def contact():
 
     return render_template("contact.html", form=form)   
 
-
 @application.route("/<user>", methods=["GET"])
 def user(user):
     return render_template("user.html", user=user)   
@@ -54,10 +53,10 @@ def becomeAHacker():
 def hackers():
     return render_template("hackers.html") 
 
-@application.route("/homeHype", methods=["GET"])
+@application.route("/", methods=["GET"])
+@application.route("/home", methods=["GET"])
 def homeHype():
     return render_template("index.html") 
-
 
 @application.errorhandler(404)
 def fileNotFound(e):
