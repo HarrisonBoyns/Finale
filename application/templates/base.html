@@ -6,6 +6,23 @@
     <meta name="author" content="">
   
     <title>Learn Hack Tutoring </title>
+
+      <!-- Favicons -->
+  <link href="../static/img/favicon.png" rel="icon">
+  <link href="../static/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Poppins:300,400,500,700" rel="stylesheet">
+
+  <!-- Bootstrap CSS File -->
+  <link href="../static/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Libraries CSS Files -->
+  <link href="../static/lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="../static/lib/animate/animate.min.css" rel="stylesheet">
+
+  <!-- Main Stylesheet File -->
+  <link href="../static/css/styleBoot.css" rel="stylesheet">
   
     <!-- Bootstrap core CSS -->
     <link href="../static/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -15,40 +32,22 @@
 
   </head>
   
-  <body style="background-color: #ddd">
+  <body style="background-color: #ddd; font-family: PT Sans;">
   
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <header id="header">
       <div class="container">
-        <a class="navbar-brand" href="{{ url_for('home') }}">LearnHack</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="{{ url_for('home') }}">Home
-                <span class="sr-only">(current)</span>
-              </a>
-            
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="{{ url_for('hackers') }}">Find a Hacker</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="{{ url_for('becomeAHacker') }}">Become a Hacker</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="{{ url_for('faq') }}">Questions</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="{{ url_for('contact') }}">Contact Us</a>
-            </li>
-            
+  
+        <nav id="nav-menu-container">
+          <ul class="nav-menu">
+            <li><a href="{{ url_for('homeHype') }}"><b>LearnHack</b></a></li>
+            <li><a href="{{ url_for('hackers') }}"><b>Find a Hacker</b></a></li>
+            <li><a href="{{ url_for('becomeAHacker') }}"><b>Become a Hacker</b></a></li>
+            <li><a href="{{ url_for('faq') }}"><b>Questions</b></a></li>
+            <li><a href="{{ url_for('contact') }}"><b>Contact Us</b></a></li>
           </ul>
-        </div>
+        </nav><!-- #nav-menu-container -->
       </div>
-    </nav>
+    </header><!-- #header -->
     
     {% with messages = get_flashed_messages(with_categories=true) %}
       {% if messages %}

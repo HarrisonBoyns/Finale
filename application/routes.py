@@ -54,6 +54,11 @@ def becomeAHacker():
 def hackers():
     return render_template("hackers.html") 
 
+@application.route("/homeHype", methods=["GET"])
+def homeHype():
+    return render_template("index.html") 
+
+
 @application.errorhandler(404)
 def fileNotFound(e):
     return (render_template("404.html"), 404)
