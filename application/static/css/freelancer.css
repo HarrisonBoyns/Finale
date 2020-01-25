@@ -9701,13 +9701,13 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .masthead {
-  padding-top: 6rem;
-  padding-bottom: 6rem;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
 }
 
 .masthead .masthead-heading {
-  font-size: 2.75rem;
-  line-height: 2.75rem;
+  font-size: 1.75rem;
+  line-height: 1.75rem;
 }
 
 .masthead .masthead-subheading {
@@ -9720,11 +9720,11 @@ a.text-dark:hover, a.text-dark:focus {
 
 @media (min-width: 992px) {
   .masthead {
-    padding-top: calc(6rem + 104px);
-    padding-bottom: 6rem;
+    padding-top: calc(5rem);
+    padding-bottom: 5rem;
   }
   .masthead .masthead-heading {
-    font-size: 4rem;
+    font-size: 2rem;
     line-height: 3.5rem;
   }
   .masthead .masthead-subheading {
