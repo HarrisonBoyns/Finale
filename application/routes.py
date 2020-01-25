@@ -33,7 +33,7 @@ def contact():
         thr = Thread(target=send_async_email, args=[application, msg])
         thr.start()
         # flash("Thanks for the Email! We will get back to you soon!")
-        return redirect(url_for("home"))
+        return redirect(url_for("homeHype"))
 
     return render_template("contact.html", form=form)   
 
