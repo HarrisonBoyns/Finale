@@ -9,7 +9,7 @@ from threading import Thread
 data = []
 
 # @async
-def send_async_email(app, msg):
+def send_async_email(application, msg):
     with application.app_context():
         mail.send(msg)
 
@@ -30,10 +30,9 @@ def contact():
         msg_email = Message(subject="Lesson", sender="LearnHackTutoring@gmail.com", recipients=["CMboyns14@hotmail.com", "harrison.boyns@hotmail.com"])
         msg_email.body = msg + "\n" + email + "\n" + phone + "\n" + name
         mail.send(msg_email)
-        thr = Thread(target=send_async_email, args=[app, msg])
+        thr = Thread(target=send_async_email, args=[application, msg])
         thr.start()
-        flash("Thanks for the Email! We will get back to you soon!")
-
+        # flash("Thanks for the Email! We will get back to you soon!")
         return redirect(url_for("home"))
 
     return render_template("contact.html", form=form)   
@@ -46,6 +45,10 @@ def user(user):
 @application.route("/faq", methods=["GET"])
 def faq():
     return render_template("faq.html")   
+
+@application.route("/becomeAHacker", methods=["GET"])
+def becomeAHacker():
+    return render_template("becomeAHacker.html")   
 
 @application.route("/hackers", methods=["GET"])
 def hackers():
