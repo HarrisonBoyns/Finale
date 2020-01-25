@@ -27,7 +27,7 @@ def contact():
         email = request.form["email"]
         phone = request.form["number"]
         msg = request.form["msg"]
-        msg_email = Message(subject="Lesson", sender="LearnHackTutoring@gmail.com", recipients=["CMboyns14@hotmail.com", "harrison.boyns@hotmail.com"])
+        msg_email = Message(subject="Lesson", sender="LearnHackTutoring@gmail.com", recipients=["LearnHackTutoring@gmail.com"])
         msg_email.body = msg + "\n" + email + "\n" + phone + "\n" + name
         mail.send(msg_email)
         thr = Thread(target=send_async_email, args=[application, msg])
