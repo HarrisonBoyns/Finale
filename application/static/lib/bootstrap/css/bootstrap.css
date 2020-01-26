@@ -3043,19 +3043,19 @@ fieldset:disabled a.btn {
 
 .btn-link {
   font-weight: 400;
-  color: #007bff;
+  color: black;
   background-color: transparent;
 }
 
 .btn-link:hover {
-  color: #0056b3;
-  text-decoration: underline;
+  color: black;
+  text-decoration: none;
   background-color: transparent;
   border-color: transparent;
 }
 
 .btn-link:focus, .btn-link.focus {
-  text-decoration: underline;
+  text-decoration: none;
   border-color: transparent;
   box-shadow: none;
 }

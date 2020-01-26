@@ -5,19 +5,13 @@ from application.forms import Email
 from threading import Thread
 # from .decorators import async
 
-
 data = []
 
 # @async
 def send_async_email(application, msg):
     with application.app_context():
         mail.send(msg)
-
-# @application.route("/", methods=["GET"])
-# @application.route("/home", methods=["GET"])
-# def home():
-#     return render_template("home.html")    
-
+ 
 @application.route("/contact", methods=["GET", "POST"])
 def contact():
     form = Email()
@@ -32,7 +26,6 @@ def contact():
         mail.send(msg_email)
         thr = Thread(target=send_async_email, args=[application, msg])
         thr.start()
-        # flash("Thanks for the Email! We will get back to you soon!")
         return redirect(url_for("homeHype"))
 
     return render_template("contact.html", form=form)   
@@ -42,9 +35,9 @@ def user(user):
     return render_template("user.html", user=user)   
 
 @application.route("/faq", methods=["GET"])
-def faq():
-    return render_template("faq.html")   
-
+def questions():
+    return render_template("question.html")   
+  
 @application.route("/becomeAHacker", methods=["GET"])
 def becomeAHacker():
     return render_template("becomeAHacker.html")   

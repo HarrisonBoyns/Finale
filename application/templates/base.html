@@ -9,6 +9,7 @@
 
       <!-- Favicons -->
   <link href="../static/img/favicon.png" rel="icon">
+
   <link href="../static/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
@@ -19,6 +20,7 @@
 
   <!-- Libraries CSS Files -->
   <link href="../static/lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+
   <link href="../static/lib/animate/animate.min.css" rel="stylesheet">
 
   <!-- Main Stylesheet File -->
@@ -39,12 +41,12 @@
     <header id="header">
       <div class="container">
   
-        <nav id="nav-menu-container">
+        <nav id="nav-menu-container" style="text-decoration: none;">
           <ul class="nav-menu">
             <li><a href="{{ url_for('homeHype') }}"><b>LearnHack</b></a></li>
             <li><a href="{{ url_for('hackers') }}"><b>Find a Hacker</b></a></li>
             <li><a href="{{ url_for('becomeAHacker') }}"><b>Become a Hacker</b></a></li>
-            <li><a href="{{ url_for('faq') }}"><b>Questions</b></a></li>
+            <li><a href="{{ url_for('questions') }}"><b>Questions</b></a></li>
             <li><a href="{{ url_for('contact') }}"><b>Contact Us</b></a></li>
           </ul>
         </nav><!-- #nav-menu-container -->

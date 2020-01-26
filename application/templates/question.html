@@ -1,0 +1,37 @@
+{% from "QuestionMacro.html" import render_QandA %}
+
+{% extends 'base.html' %}
+{% block content %}
+<style>
+	a {
+	color: white;
+	}
+	a:hover,
+	a:active,
+	a:focus {
+	color: white;
+	outline: none;
+	text-decoration: none;
+	}
+</style>
+
+	<h1 style="text-align: center;  padding-top: 30px; padding-bottom: 15px;">Bookings</h1>
+    {{ render_QandA("Hello", "world", "1") }}
+    {{ render_QandA("I", "Have", "2") }}
+    {{ render_QandA("So", "Many", "3") }}
+    {{ render_QandA("Questions", "Its", "4") }}
+    {{ render_QandA("Killing", "Me", "5") }}
+	{{ render_QandA("Hello", "World", "6") }}
+	{{ render_QandA("Welcome", "To", "7") }}
+    {{ render_QandA("My", "FAQ", "8") }}
+    {{ render_QandA("Page", "Any Thoughts", "9") }}
+	{{ render_QandA("If", "You", "10") }}
+	<h1 style="text-align: center;  padding-top: 30px; padding-bottom: 15px;">Bills</h1>
+    {{ render_QandA("Do", "Then", "11") }}
+    {{ render_QandA("Why", "Don't", "12") }}
+	{{ render_QandA("You", "HMU", "13") }}
+	<h1 style="text-align: center;  padding-top: 30px; padding-bottom: 15px;">Hackers</h1>
+    {{ render_QandA("And", "Offer", "14") }}
+    {{ render_QandA("Some", "Constructive", "15") }}
+	{{ render_QandA("Feedback", "Ohh", "16") }}
+{% endblock content %}
