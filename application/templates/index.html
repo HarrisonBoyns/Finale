@@ -40,11 +40,11 @@
 
       <nav id="nav-menu-container">
         <ul class="nav-menu">
-          <li><a href="{{ url_for('homeHype') }}"><b>LearnHack</b></a></li>
-          <li><a href="{{ url_for('hackers') }}"><b>Find a Hacker</b></a></li>
-          <li><a href="{{ url_for('becomeAHacker') }}"><b>Become A Hacker</b></a></li>
-          <li><a href="{{ url_for('questions') }}"><b>Questions</b></a></li>
-          <li><a href="{{ url_for('contact') }}"><b>Contact Us</b></a></li>
+            <li><a href="{{ url_for('homeHype') }}"><b>LearnHack</b></a></li>
+            <li><a href="{{ url_for('hackers') }}"><b>Book a Teacher</b></a></li>
+            <li><a href="{{ url_for('becomeAHacker') }}"><b>Careers</b></a></li>
+            <li><a href="{{ url_for('questions') }}"><b>FAQs</b></a></li>
+            <li><a href="{{ url_for('contact') }}"><b>Contact Us</b></a></li>
         </ul>
       </nav><!-- #nav-menu-container -->
     </div>
@@ -57,7 +57,7 @@
     <div class="hero-container">
       <h1>Welcome to Learn Hack</h1>
       <h2>Do You Want To Be Able To Code</h2>
-      <a href="{{ url_for('contact') }}" class="btn-get-started">CLICK HERE</a>
+      <a href="{{ url_for('contact') }}" class="btn-get-started">Click Here</a>
     </div>
   </section><!-- #hero -->
 
@@ -87,7 +87,7 @@
   				</div>
 
           <div class="col-lg-3 col-6 text-center">
-            <p><b>Through Remote Lessons</b></p>
+            <p><b>Remotely</b></p>
   				</div>
 
   			</div>
@@ -97,45 +97,6 @@
     
     <!-- #facts -->
 
-  
-    <!--==========================
-      About Us Section
-    ============================-->
-    <section id="about">
-      <div class="container">
-        <div class="row about-container">
-
-          <div class="col-lg-6 content order-lg-1 order-1">
-            <h2 class="title">A Few Words About Learn Hack</h2>
-            <p>
-              Learn Hack was created by two brothers, Harrison and Charlie Boyns. The young (ish) men in the photo!
-            </p>
-
-            <div class="icon-box wow fadeInUp">
-              <div class="icon"><i class="fa fa-shopping-bag"></i></div>
-              <h4 class="title"><a href="">Brothers</a></h4>
-              <p class="description">Harrison Boyns holds a 1st class degree in Neuroscience and a Masters in Computer Science. In contrast, Charlie went down the legal path, having studied Law.</p>
-            </div>
-
-            <div class="icon-box wow fadeInUp" data-wow-delay="0.2s">
-              <div class="icon"><i class="fa fa-photo"></i></div>
-              <h4 class="title"><a href="">Motivation</a></h4>
-              <p class="description">After finishing University, Harrison went on to work for an International bank, whilst Charlie chose an International consulting firm. During this time, both brother’s both recognised the increasing professional demand for coders. </p>
-            </div>
-
-            <div class="icon-box wow fadeInUp" data-wow-delay="0.4s">
-              <div class="icon"><i class="fa fa-bar-chart"></i></div>
-              <h4 class="title"><a href="">Practice</a></h4>
-              <p class="description">Fuelled by this knowledge, the pair set about on a mission - a mission to equip anyone willing with the skills of the future.</p>
-            </div>
-
-          </div>
-
-          <div class="col-lg-6 background order-lg-2 order-2 wow fadeInRight"></div>
-        </div>
-
-      </div>
-    </section><!-- #about -->
 
     <!--==========================
       Facts Section
@@ -155,7 +116,7 @@
 
           <div class="col-lg-3 col-6 text-center">
             <span data-toggle="counter-up">15</span>
-            <p>Hackers</p>
+            <p>Teachers</p>
   				</div>
 
           <div class="col-lg-3 col-6 text-center">
@@ -183,15 +144,55 @@
         <div class="row">
           <div class="col-lg-9 text-center text-lg-left">
             <h3 class="cta-title">Ready To Book?</h3>
-            <p class="cta-text"> Coding is the future. Get ahead of the game and start to code now! Click below to pick a tutor.             </p>
+            <p class="cta-text"> Coding is the future. Get ahead of the game and start to code now! Click to get to know our Teachers.             </p>
           </div>
           <div class="col-lg-3 cta-btn-container text-center">
-            <a class="cta-btn align-middle" href="{{ url_for('hackers') }}">Hackers</a>
+            <a class="cta-btn align-middle" href="{{ url_for('hackers') }}">Teachers</a>
           </div>
         </div>
 
       </div>
     </section><!-- #call-to-action -->
+
+
+        <!--==========================
+      About Us Section
+    ============================-->
+    <section id="about">
+      <div class="container">
+        <div class="row about-container">
+
+          <div class="col-lg-6 content order-lg-1 order-1">
+            <h2 class="title">Our Story</h2>
+            <p>
+              Learn Hack was created by two brothers, Harrison and Charlie Boyns. The young (ish) men in the photo!
+            </p>
+
+            <div class="icon-box wow fadeInUp">
+              <div class="icon"><i class="fa fa-shopping-bag"></i></div>
+              <h4 class="title"><a href="">Brothers</a></h4>
+              <p class="description">Harrison Boyns holds a 1st class degree in Neuroscience and a Masters in Computer Science. In contrast, Charlie went down the legal path, having studied Law.</p>
+            </div>
+
+            <div class="icon-box wow fadeInUp" data-wow-delay="0.2s">
+              <div class="icon"><i class="fa fa-photo"></i></div>
+              <h4 class="title"><a href="">Motivation</a></h4>
+              <p class="description">After finishing University, Harrison went on to work for an International bank, whilst Charlie chose an Multi-national consulting firm. Harrison has taught Computer Science for the past five years. Recently, both brother’s both recognised the increasing professional demand for coders. </p>
+            </div>
+
+            <div class="icon-box wow fadeInUp" data-wow-delay="0.4s">
+              <div class="icon"><i class="fa fa-bar-chart"></i></div>
+              <h4 class="title"><a href="">Practice</a></h4>
+              <p class="description">Fuelled by this knowledge, the pair set about on a mission - a mission to equip anyone willing with the skills of the future.</p>
+            </div>
+
+          </div>
+
+          <div class="col-lg-6 background order-lg-2 order-2 wow fadeInRight"></div>
+        </div>
+
+      </div>
+    </section><!-- #about -->
 
 
   </main>
