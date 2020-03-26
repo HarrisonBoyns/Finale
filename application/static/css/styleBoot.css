@@ -482,7 +482,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 .section-header .section-description {
   text-align: center;
-  padding-bottom: 40px;
+  padding-bottom: 20px;
   color: #999;
 }
 
@@ -580,7 +580,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #facts {
   background: #f7f7f7;
-  padding: 80px 0 60px 0;
+  padding: 40px 0 0px 0;
 }
 
 #facts .counters span {

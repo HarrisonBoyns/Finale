@@ -2,7 +2,7 @@ from flask_wtf import FlaskForm
 from wtforms.validators import DataRequired, url, Email, Length
 from wtforms.fields import StringField, PasswordField, BooleanField, SubmitField
 
-class Email(FlaskForm):
+class EmailClass(FlaskForm):
     name = StringField("Name", validators=[
         DataRequired(), Length(2, 50)])
     email = StringField("Email ", validators=[

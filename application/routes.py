@@ -1,7 +1,7 @@
 from application import application, mail
 from flask import render_template, url_for, request,redirect, flash
 from flask_mail import Message
-from application.forms import Email
+from application.forms import EmailClass
 from threading import Thread
 # from .decorators import async
 
@@ -14,7 +14,7 @@ def send_async_email(application, msg):
  
 @application.route("/contact", methods=["GET", "POST"])
 def contact():
-    form = Email()
+    form = EmailClass()
     print(form.validate_on_submit())
     if form.validate_on_submit():
         name = request.form["name"]
