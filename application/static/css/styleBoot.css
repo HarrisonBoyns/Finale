@@ -490,7 +490,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 --------------------------------*/
 
 #about {
-  background: #fff;
+  background: #ddd;
   padding: 80px 0;
 }
 
@@ -502,7 +502,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #about .about-container .content {
-  background: #fff;
+  background: #ddd;
 }
 
 #about .about-container .title {
@@ -520,14 +520,14 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #about .about-container .icon-box {
-  background: #fff;
+  background: #ddd;
   background-size: cover;
   padding: 0 0 30px 0;
 }
 
 #about .about-container .icon-box .icon {
   float: left;
-  background: #fff;
+  background: #ddd;
   width: 64px;
   height: 64px;
   display: -webkit-box;
@@ -579,7 +579,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 --------------------------------*/
 
 #facts {
-  background: #f7f7f7;
+  background: #ddd;
   padding: 40px 0 0px 0;
 }
 
