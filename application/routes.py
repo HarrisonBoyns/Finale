@@ -26,6 +26,7 @@ def contact():
         mail.send(msg_email)
         thr = Thread(target=send_async_email, args=[application, msg_email])
         thr.start()
+        flash("Email Recieved!")
         return redirect(url_for("homeHype"))
 
     return render_template("contact.html", form=form)   
