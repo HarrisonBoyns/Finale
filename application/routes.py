@@ -24,7 +24,7 @@ def contact():
         msg_email = Message(subject="Lesson", sender="LearnHackTutoring@gmail.com", recipients=["LearnHackTutoring@gmail.com"])
         msg_email.body = msg + "\n" + email + "\n" + phone + "\n" + name
         mail.send(msg_email)
-        thr = Thread(target=send_async_email, args=[application, msg])
+        thr = Thread(target=send_async_email, args=[application, msg_email])
         thr.start()
         return redirect(url_for("homeHype"))
 
