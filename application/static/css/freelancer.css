@@ -2719,12 +2719,12 @@ fieldset:disabled a.btn {
 }
 
 .btn-outline-light {
-  color: #f8f9fa;
+  color: #000000;
   border-color: #f8f9fa;
 }
 
 .btn-outline-light:hover {
-  color: #212529;
+  color: #f8f9fa;
   background-color: #f8f9fa;
   border-color: #f8f9fa;
 }
