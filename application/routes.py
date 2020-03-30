@@ -9,8 +9,12 @@ data = []
 
 # @async
 def send_async_email(application, msg):
-    with application.app_context():
-        mail.send(msg)
+    form = EmailClass()
+    try:
+        with application.app_context():
+            mail.send(msg)
+    except:
+        render_template("contact.html", form=form)
  
 @application.route("/contact", methods=["GET", "POST"])
 def contact():
