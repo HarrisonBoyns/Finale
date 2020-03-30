@@ -17,18 +17,20 @@ def contact():
     form = EmailClass()
     print(form.validate_on_submit())
     if form.validate_on_submit():
-        name = request.form["name"]
-        email = request.form["email"]
-        phone = request.form["number"]
-        msg = request.form["msg"]
-        msg_email = Message(subject="Lesson", sender="LearnHackTutoring@gmail.com", recipients=["LearnHackTutoring@gmail.com"])
-        msg_email.body = msg + "\n" + email + "\n" + phone + "\n" + name
-        mail.send(msg_email)
-        thr = Thread(target=send_async_email, args=[application, msg_email])
-        thr.start()
-        flash("Email Recieved!")
-        return redirect(url_for("homeHype"))
-
+        try:
+            name = request.form["name"]
+            email = request.form["email"]
+            phone = request.form["number"]
+            msg = request.form["msg"]
+            msg_email = Message(subject="Lesson", sender="LearnHackTutoring@gmail.com", recipients=["LearnHackTutoring@gmail.com"])
+            msg_email.body = msg + "\n" + email + "\n" + phone + "\n" + name
+            mail.send(msg_email)
+            thr = Thread(target=send_async_email, args=[application, msg_email])
+            thr.start()
+            flash("Email Recieved!")
+            return redirect(url_for("homeHype"))
+        except:
+            render_template("contact.html", form=form)
     return render_template("contact.html", form=form)   
 
 @application.route("/<user>", methods=["GET"])
